@@ -26,7 +26,7 @@ class TestHomepage(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = Chrome(r'/Volumes/D/pythoncode/webdriver/chromedriver')
+        cls.driver = Chrome(config.CHROMEDRIVER)  # chromedriver的文件地址
         url = config.HOMEPAGE_URL
         cls.session = Homepage(driver=cls.driver, url=url)
         cls.session.fullscreen()

@@ -8,7 +8,7 @@ from pages.homepage import Homepage
 import config
 
 
-driver = Chrome(r'/Volumes/D/pythoncode/webdriver/chromedriver')
+driver = Chrome(config.CHROMEDRIVER)
 # url = config.HOMEPAGE_URL
 url = config.EDU_URL
 
